@@ -24,7 +24,7 @@ Example 3:
 
 class Solution(object):
     def twoSum(self, nums, target):
-        dictionary = {}
+        dictionary = {} #value : index
         for index, value in enumerate(nums):
             required = target - value
             if required in dictionary:
