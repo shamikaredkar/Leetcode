@@ -12,7 +12,9 @@ Example 3:
     Output: true
 '''
 
-#O(N2)
+#O(N) - Time
+#O(N) - Space (We created a set)
+#This is an optimal solution
 '''
 1. We create a new set
 2. So for every num in nums, we check if the num exists in the set
