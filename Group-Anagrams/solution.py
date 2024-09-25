@@ -15,6 +15,7 @@ Example 3:
     Output: [["a"]]
 '''
 
+#O(M*N) - Time Complexity
 '''
 1. We initialize our result with a defaultdict(list) where if we try to access values that do not exist we get a default value (empty list)
 2. Then we loop through out strs list
