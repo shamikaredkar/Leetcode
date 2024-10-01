@@ -18,7 +18,7 @@ Example 3:
     Output: true
 '''
 
-#O(N) - Time Complexity
+#O(N+M) - Time Complexity
 #O(N) - Space Complexity
 '''
 1. We start by creating a list where we will store the 0th index of each word.
@@ -38,3 +38,16 @@ class Solution(object):
         result = ''.join(map(str, list1))
         if result == s:
             return True
+
+#Shorter version of
+class Solution(object):
+    def isAcronym(self, words, s):
+        word = ''
+        for i in words:
+            word += i[0]
+        # result = ''.join(map(str, list1))
+        return word == s
+    
+#OR
+
+#ans = ''.join([i[0] for i in words])
